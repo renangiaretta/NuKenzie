@@ -10,27 +10,17 @@ const AccountBalance = ({ valuesList }) => {
         return acc
     }, {})
     const entradas = sumOfEntries.entrada ? sumOfEntries.entrada : sumOfEntries.entrada = 0
-    const saidas = sumOfEntries.saida? sumOfEntries.saida : sumOfEntries.saida = 0
-    const balance = entradas - saidas
-    
-    
-    const test = ( e ) => {
-
-        e.preventDefault()
-        console.log('entradas e saidas', sumOfEntries)
-        console.log('balance', balance)
-    }
-
-
+    const saidas   = sumOfEntries.saida? sumOfEntries.saida : sumOfEntries.saida        = 0
+    const balance  = entradas - saidas
 
     return (
     <StyledAccountBalance>
-        <span>
-            R$ {balance}
+        <span className = 'title1'>
+            Saldo: 
         </span>
-        <button onClick={test}>
-            teste
-        </button>
+        <span className = 'title4'>
+            R$  {balance}
+        </span>
     </StyledAccountBalance>
     )
 }

@@ -1,12 +1,11 @@
 import styled from "styled-components"
 
 
-
 export const StyledAddValues = styled.div`
 
-    width: 363px;
-    height: 351px;
-    border: 1px solid black;
+    width: 35.5rem;
+    height: 43.4rem;
+    border: 1px solid #0000003a;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -15,10 +14,11 @@ export const StyledAddValues = styled.div`
     margin: 2rem;
 
     .addValuesContainer {
-        height: 80%;
+        height: 95%;
         width: 90%;
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         gap: 1rem;
     }
 
@@ -32,8 +32,9 @@ export const StyledAddValues = styled.div`
     .description-input {
         width: 100%;
         height: 100%;
-        border: 2px solid #F8F9FA;
+        border: 1px solid var(--color-grey-3);
         border-radius: 8px;
+        background-color: var(--color-grey-2);
     }
     .description-values-container {
         width: 100%;
@@ -41,19 +42,17 @@ export const StyledAddValues = styled.div`
         display: flex;
     }
     .values-container {
-        background-color: red;
         height: 100%;
         width: 50%;
         display: flex;
         flex-direction: column;
     }
     .values {
-        width: 150px;
+        width: 85%;
         height: 48px;
-        border: 2px solid F8F9FA;
+        border: 1px solid var(--color-grey-3);
         border-radius: 8px;
-        /* padding: 0px 16px; */
-        background-color: blue;
+        background-color: var(--color-grey-2);
     }
     button {
         cursor: pointer;
