@@ -59,6 +59,9 @@ export const StyledIndex = styled.div`
         font-size       : 1rem;
         line-height     : 1.5rem;
         cursor          : pointer;
+        :hover {
+            background-color: #E34981;
+        }
     }
     .indexRightContainer {
         height         : 50%;

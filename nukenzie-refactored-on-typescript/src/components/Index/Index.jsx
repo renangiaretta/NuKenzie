@@ -15,7 +15,7 @@ const Index = ( {setLogin} ) => {
                 <button type = 'button' onClick = {() => setLogin(true)}>Iniciar</button>
             </div>
             <div className = 'IndexRightContainer'>
-            <img className = 'right-img' src = {illustration} alt = 'NAOACHEIAMERDADAIMAGEM' />
+            <img className = 'right-img' src = {illustration} alt = 'index' />
             </div>
             </div>
         </StyledIndex>
