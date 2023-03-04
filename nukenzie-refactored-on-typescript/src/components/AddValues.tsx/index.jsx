@@ -50,8 +50,8 @@ const AddValues = ( { valuesList, setFormData } ) => {
               <option value     = "Entrada">
                   Entrada
                 </option>
-                <option value = "Saída">
-                  Saída
+                <option value = "Despesa">
+                  Despesa
                 </option>
               </select>
             </div>

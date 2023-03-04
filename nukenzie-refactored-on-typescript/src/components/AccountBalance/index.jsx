@@ -10,7 +10,7 @@ const AccountBalance = ({ valuesList }) => {
         return acc
     }, {})
     const entradas = sumOfEntries.Entrada ? sumOfEntries.Entrada : sumOfEntries.Entrada = 0
-    const saidas   = sumOfEntries.Saída? sumOfEntries.Saída : sumOfEntries.Saída        = 0
+    const saidas   = sumOfEntries.Despesa? sumOfEntries.Despesa : sumOfEntries.Despesa        = 0
     const balance  = entradas - saidas
 
     return (

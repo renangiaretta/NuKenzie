@@ -1,7 +1,5 @@
 import React from 'react'
 import CardEntry from './../CardEntry'
-
-
 import { StyledFinancialResume } from './styles'
 
 const FinancialResume = ({ valuesList, filtered, setCategory, removeEntry }) => {
@@ -13,7 +11,7 @@ const FinancialResume = ({ valuesList, filtered, setCategory, removeEntry }) => 
         setCategory('Entrada')
     }
     const filterExpense = () => {
-        setCategory('Saída')
+        setCategory('Despesa')
     }
     return (
         <StyledFinancialResume>
@@ -25,7 +23,7 @@ const FinancialResume = ({ valuesList, filtered, setCategory, removeEntry }) => 
                     <div    className = 'buttons-container'>
                     <button onClick   = {filterAll}>Todos</button>
                     <button onClick   = {filterEntry}>Entradas</button>
-                    <button onClick   = {filterExpense}>Saídas</button>
+                    <button onClick   = {filterExpense}>Despesas</button>
                     </div>
                 </div>
                     {
