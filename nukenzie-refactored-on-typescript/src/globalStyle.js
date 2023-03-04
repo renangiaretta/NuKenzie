@@ -1,7 +1,9 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
-:root{
+    font-family: Arial, Helvetica, sans-serif, 'Nunito', sans-serif;
+    :root{
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@font-weight&display=swap');
     --color-primary1 : #FD377E;
     --color-primary2 : #E34981;
     --color-secondary: #03B898;
@@ -25,11 +27,11 @@ export default createGlobalStyle`
     }
     body, html {
         justify-content: center;
-          /* width: 100vw; */
-          /* height: 100vh; */
+        width          : 100vw;
+        height         : 100vh;
+          /* background-color: #212529; */
     }
     body {
-          /* background-color: #121214; */
         font-family: Nunito;
         font-size  : 1.6rem;
     }
@@ -41,10 +43,12 @@ export default createGlobalStyle`
         border: none;
     }
     .main-container {
-        display        : flex;
-        justify-content: center;
-        align-items    : center;
-        gap            : 4rem;
+        margin-top      : 2rem;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        gap             : 4rem;
+        background-color: var(--color-grey-1);
     }
     .title1 {
         font-weight: bold;
@@ -53,8 +57,9 @@ export default createGlobalStyle`
         color      : var(--color-grey-4);
     }
     .title2 {
+        font-family: 'Nunito' sans-serif;
         font-weight: bold;
-        font-size  : 2.2rem;
+        font-size  : 2rem;
         color      : var(--color-grey-4);
     }
     .title3 {

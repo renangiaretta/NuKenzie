@@ -4,15 +4,29 @@ import CardEntry from './../CardEntry'
 
 import { StyledFinancialResume } from './styles'
 
-const FinancialResume = ({ valuesList }) => {
+const FinancialResume = ({ valuesList, filtered, setCategory, removeEntry }) => {
 
+    const filterAll = () => {
+        setCategory('')
+    }
+    const filterEntry = () => {
+        setCategory('entrada')
+    }
+    const filterExpense = () => {
+        setCategory('saida')
+    }
     return (
         <StyledFinancialResume>
             <div className = 'financial-container'>
-                <div className = 'text-container title2'>
+            <div className = 'text-container title2'>
                     <h3>
                         Resumo Financeiro
                     </h3>
+                    <div    className = 'buttons-container'>
+                    <button onClick   = {filterAll}>Todos</button>
+                    <button onClick   = {filterEntry}>Entradas</button>
+                    <button onClick   = {filterExpense}>Saidas</button>
+                    </div>
                 </div>
                     {
                             valuesList.length === 0 ?
@@ -23,8 +37,8 @@ const FinancialResume = ({ valuesList }) => {
                     <div className = 'cards-container'>
                         <ul>
                             {
-                                valuesList.map(( valores, index ) => {
-                                    return <CardEntry key = {index} value = {valores} />
+                                filtered.map(( valores, index ) => {
+                                    return <CardEntry key = {index} value = {valores} removeEntry = {removeEntry} />
                                 })
                             }
                         </ul>
