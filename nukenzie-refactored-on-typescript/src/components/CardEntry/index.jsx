@@ -5,7 +5,7 @@ import trash from './../../assets/img/trash.png'
 const CardEntry = ({ value, removeEntry }) => {
     return (
         <StyledCardEntry>
-            <div  className = {value.valueType === 'entrada' ? 'entryCard card-container' : 'expenseCard card-container'} >
+            <div  className = {value.valueType === 'Entrada' ? 'entryCard card-container' : 'expenseCard card-container'} >
             <div  className = 'card-texts'>
             <span className = 'entry-name title2'>
                         {

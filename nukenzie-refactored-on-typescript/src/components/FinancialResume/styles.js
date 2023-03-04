@@ -9,6 +9,7 @@ export const StyledFinancialResume = styled.div`
     height        : 400px;
     .text-container {
         display        : flex;
+        width: 100%;
         justify-content: space-between;
     }
     .buttons-container {
@@ -56,5 +57,26 @@ export const StyledFinancialResume = styled.div`
         margin-top     : 1rem;
         gap            : 1rem;
         justify-content: center;
+    }
+    @media ( max-width: 900px ) {
+        width: 50rem;
+        .text-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .buttons-container {
+            width: 100%;
+        }
+        .no-entries {
+            margin: 0 auto;
+        }
+    }
+    @media ( max-width: 500px ) {
+        width: 40rem;
+    }
+    @media ( max-width: 400px ) {
+        width: 30rem;
     }
 `

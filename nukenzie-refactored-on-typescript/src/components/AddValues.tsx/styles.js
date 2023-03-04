@@ -57,9 +57,11 @@ export const StyledAddValues = styled.div`
         width         : 50%;
         display       : flex;
         flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
     }
     .values {
-        width           : 85%;
+        width           : 95%;
         height          : 48px;
         border          : 1px solid var(--color-grey-3);
         border-radius   : 8px;
@@ -68,6 +70,7 @@ export const StyledAddValues = styled.div`
         font-family     : 'nunito' sans-serif;
         font-weight     : bold;
         font-size       : 1.5rem;
+        margin: 0 auto;
     }
     span {
         margin-bottom: 0.7rem;
@@ -83,6 +86,11 @@ export const StyledAddValues = styled.div`
         color           : white;
         font-family     : 'Nunito' sans-serif;
         font-weight     : bold;
+        :hover {
+            background-color: var(--color-primary2);
+        }
     }
-
+    @media ( max-width: 900px ) {
+        width: auto;
+    }
 `

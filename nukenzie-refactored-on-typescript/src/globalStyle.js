@@ -90,4 +90,11 @@ export default createGlobalStyle`
         font-size  : 1.6rem;
         line-height: 2.639rem;
     }
+    @media ( max-width: 900px ){
+        .main-container {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    }
+
 `

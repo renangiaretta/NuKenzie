@@ -9,8 +9,8 @@ const AccountBalance = ({ valuesList }) => {
         acc[item.valueType] += item.value
         return acc
     }, {})
-    const entradas = sumOfEntries.entrada ? sumOfEntries.entrada : sumOfEntries.entrada = 0
-    const saidas   = sumOfEntries.saida? sumOfEntries.saida : sumOfEntries.saida        = 0
+    const entradas = sumOfEntries.Entrada ? sumOfEntries.Entrada : sumOfEntries.Entrada = 0
+    const saidas   = sumOfEntries.Saída? sumOfEntries.Saída : sumOfEntries.Saída        = 0
     const balance  = entradas - saidas
 
     return (

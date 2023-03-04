@@ -10,10 +10,10 @@ const FinancialResume = ({ valuesList, filtered, setCategory, removeEntry }) => 
         setCategory('')
     }
     const filterEntry = () => {
-        setCategory('entrada')
+        setCategory('Entrada')
     }
     const filterExpense = () => {
-        setCategory('saida')
+        setCategory('Saída')
     }
     return (
         <StyledFinancialResume>
@@ -25,12 +25,12 @@ const FinancialResume = ({ valuesList, filtered, setCategory, removeEntry }) => 
                     <div    className = 'buttons-container'>
                     <button onClick   = {filterAll}>Todos</button>
                     <button onClick   = {filterEntry}>Entradas</button>
-                    <button onClick   = {filterExpense}>Saidas</button>
+                    <button onClick   = {filterExpense}>Saídas</button>
                     </div>
                 </div>
                     {
                             valuesList.length === 0 ?
-                        <h2 className           = 'title3'>
+                        <h2 className           = 'title3 no-entries'>
                         Você ainda não possui nenhum lançamento.
                         </h2>
                     : 

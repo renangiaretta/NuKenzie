@@ -24,6 +24,7 @@ export const StyledIndex = styled.div`
         display        : flex;
         flex-direction : column;
         justify-content: center;
+        margin: 0 auto;
     }
     .left-container img {
         width : 7.625rem;
@@ -69,4 +70,25 @@ export const StyledIndex = styled.div`
     .right-img {
         width: 95%;
     }
+    @media ( max-width: 900px ) {
+        height: auto;
+        .mainContainer {
+            flex-direction: column;
+            height: auto;
+        }
+        .left-container {
+            width: 100%;
+            align-items: center;
+            margin-bottom: 2rem;
+            h1 {
+                width: 80%;
+                text-align: center;
+            }
+        }
+        .right-img {
+            height: auto;
+            width: 20rem;
+        }
+    }
+
 `

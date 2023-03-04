@@ -7,7 +7,7 @@ const AddValues = ( { valuesList, setFormData } ) => {
   
   const [ description, setDescription ] = useState('')
   const [ value, setValue ]             = useState('')
-  const [ valueType, setValueType ]     = useState('entrada')
+  const [ valueType, setValueType ]     = useState('Entrada')
 
 
 
@@ -37,21 +37,21 @@ const AddValues = ( { valuesList, setFormData } ) => {
           </span>
           <div className = 'description-values-container'>
           <div className = 'values-container'>
-              <span>
+              <span className='title2'>
                 Valor
               </span>
               <input className = 'values' type = "text" placeholder = 'R$' onChange = {e => setValue( parseInt(e.target.value))} />
             </div>
             <div className = 'values-container'>
-              <span>
+              <span className='title2'>
                 Tipo de valor
               </span>
               <select className = 'values' name = "valueType" defaultValue = {'select'} id = "" onChange = {e => setValueType(e.target.value)} >
-              <option value     = "entrada">
-                  entrada
+              <option value     = "Entrada">
+                  Entrada
                 </option>
-                <option value = "saida">
-                  saída
+                <option value = "Saída">
+                  Saída
                 </option>
               </select>
             </div>
